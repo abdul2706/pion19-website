@@ -25,20 +25,22 @@
 <body>
     <nav id="top-nav">
         <img src="images/pion18-logo-02.png">
-        <a href="#">HOME</a>
-        <a href="#">ABOUT</a>
-        <a href="#">REGISTRATION</a>
-        <a href="#">MODULES</a>
-        <a href="#">TEAMS</a>
-        <a href="#">LEGACY</a>
-        <a href="#">LOGIN/SIGNIN</a>
-        <a href="javascript:void(0);" id="menu-icon">
-            <i class="fa fa-bars"></i>
-        </a>
+        <div id="menu-items">
+            <a href="#">HOME</a>
+            <a href="#">ABOUT</a>
+            <a href="#">REGISTRATION</a>
+            <a href="#">MODULES</a>
+            <a href="#">TEAMS</a>
+            <a href="#">LEGACY</a>
+            <a href="#">LOGIN/SIGNIN</a>
+            <a href="javascript:void(0);" id="menu-icon">
+                <i class="fa fa-bars"></i>
+            </a>
+        </div>
     </nav>
 
     <main>
-        <section class="overlay-container" id="section-intro">
+        <section id="section-intro">
             <img class="parallex" src="images/mic-02.jpg">
             <p id="full-form">Pakistan Olympiad De`Nationale</p>
             <p id="abbrevation">PION`19</p>
@@ -46,21 +48,18 @@
             <button>Register Now</button>
         </section>
 
-        <section class="overlay-container" id="section-image-slider">
+        <section id="section-image-slider">
             <img src="images/mic-01.jpg">
-            <div id="slide-left-button"></div>
-            <div id="slide-right-button"></div>
+            <div class="slide-left-button"></div>
+            <div class="slide-right-button"></div>
         </section>
 
-        <section class="overlay-container" id="section-video-slider">
-            <!-- <div id="video-container"> -->
-            <video controls>
-				<source src="videos/video-01.mp4" type="video/mp4">
-				Your browser does not support HTML5 video.
-			</video>
-            <!-- </div> -->
-            <div id="slide-left-button"></div>
-            <div id="slide-right-button"></div>
+        <section id="section-video-slider">
+            <div id="video-container">
+                <video controls><source src="videos/video-01.mp4" type="video/mp4">Your browser does not support HTML5 video.</video>
+            </div>
+            <div class="slide-left-button"></div>
+            <div class="slide-right-button"></div>
         </section>
 
         <sectin id="section-sponsorship">
@@ -95,19 +94,21 @@
     </main>
 
     <footer>
-        <div id="google-map-container">
-            <p>TODO: display google maps</p>
-        </div>
-        <div id="contact-us-container">
-            <center>
-                <h2>Contact Us</h2>
-                <form id="contact-form" action="#">
-                    <label for="email">Email: </label>
-                    <input id="email" type="email" name="email" required><br>
-                    <label for="password">Password: </label>
-                    <input id="password" type="password" name="password" required>
-                </form>
-            </center>
+        <div id="footer-row">
+            <div id="google-map-container">
+                <p>TODO: display google maps</p>
+            </div>
+            <div id="contact-us-container">
+                <center>
+                    <h2>Contact Us</h2>
+                    <form id="contact-form" action="#">
+                        <label for="email">Email: </label>
+                        <input id="email" type="email" name="email" required><br>
+                        <label for="password">Password: </label>
+                        <input id="password" type="password" name="password" required>
+                    </form>
+                </center>
+            </div>
         </div>
         <div id="quick-links-container">
             <table>
@@ -146,6 +147,9 @@
                     </tr>
                 </tbody>
             </table>
+        </div>
+        <div id="credits">
+            <a href="#">Created by Web-Team PiON`19</a>
         </div>
     </footer>
 
